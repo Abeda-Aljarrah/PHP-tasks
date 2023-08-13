@@ -200,6 +200,15 @@ th{
     font-size: 30px;
     padding: 20px;
 }
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+tr:nth-child(even) {background-color: #f2f2f2;}
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
 /*responsive*/
 /*********************************************mobile***********************************************/
 
@@ -462,4 +471,3 @@ th{
 	td:nth-of-type(5):before { content: "Photo"; }
 }
 
-/*********************************************view page***********************************************/

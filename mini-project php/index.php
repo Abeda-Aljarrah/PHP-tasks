@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
         "price" => $_POST["price"],
         "details" => $_POST["details"],
         "date" => $_POST["date"],
-        // "photo" => $_POST["photo"], // Assuming you are storing the image file path here
+        // "photo" => $_POST["photo"], 
     );
 
     // Add the new input data to the beginning of the array
@@ -45,8 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
             </label>
             <input type="checkbox" id="menu-toggle" />
             <ul id="nav-item">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">Catagories</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="view.php">Catagories</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Contact us</a></li>
             </ul>
@@ -89,14 +89,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
     <?php
     // Display all input data in the table only if there is new form submission
     if (count($_SESSION["inputs"]) > 0) {
-        echo '<table border="1" class="table">
-        <tr class="table-header">
-            <th>Name</th>
-            <th>Price</th>
-            <th>Details</th>
-            <th>Date</th>
-            <th>Photo</th>
-        </tr>';
+
+       echo "<table class='table' ";
+       echo "<tr>";
+       echo "<th>Name</th>";
+       echo "<th>Price</th>";
+       echo "<th>details</th>";
+       echo "<th>Date</th>";
+       echo "</tr>";
 
         foreach ($_SESSION["inputs"] as $inputData) {
             echo '<tr>';

@@ -25,8 +25,8 @@ $inputs = isset($_SESSION["inputs"]) ? $_SESSION["inputs"] : array();
             </label>
             <input type="checkbox" id="menu-toggle" />
             <ul id="nav-item">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">Catagories</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="view.php">Catagories</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Contact us</a></li>
             </ul>
